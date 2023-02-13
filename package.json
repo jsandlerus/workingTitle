@@ -4,16 +4,28 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prod": "node ./server/server.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@next/font": "13.1.6",
+    "@zeit/next-css": "^1.0.1",
+    "css-loader": "^6.7.3",
+    "dotenv": "^16.0.3",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
+    "express": "^4.18.2",
     "next": "13.1.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "style-loader": "^3.3.1"
+  },
+  "devDependencies": {
+    "cssnano": "^5.1.14",
+    "postcss": "^8.4.21",
+    "postcss-loader": "^7.0.2",
+    "postcss-preset-env": "^8.0.1"
   }
 }
